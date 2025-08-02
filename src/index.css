@@ -1,0 +1,761 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  background-color: #F1F2F4;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  all: unset;
+}
+
+input {
+  all: unset
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ///////////////////////////////////////////// */
+
+
+header,
+.headLeft,
+.headRight {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  padding: 0.4em 0.5em;
+  flex: 1 1 0;
+  background-color: white;
+}
+
+.headerlogo {
+  width: 130px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.headLeft {
+  flex: 1 1 60%;
+  padding: 0 1em;
+}
+
+.headRight {
+  flex: 1 1 40%;
+  padding: 0 1em;
+  gap: 2em;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+
+.headLeft1 {
+  flex-grow: 1;
+}
+
+.headLeft2 {
+  flex-grow: 3;
+}
+
+.headLeft2 .search {
+  background-color: #f0f5ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-self: center;
+  gap: 0.5em;
+  border-radius: 5px;
+  padding: 0.4em 1em;
+}
+
+.headIcon {
+  font-size: 1.4em;
+}
+
+.headIcon:last-child {
+  padding-right: 1em;
+}
+
+.search div,
+.search input {
+  width: 100%;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+/* ------------ section 1 ------------ */
+
+.section1,
+.section3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 0.8em;
+}
+
+.section11,
+.section31 {
+  background-color: white;
+  padding: 0.6em 1em;
+  flex: 1 1 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0.5em;
+  overflow: scroll;
+  /* max-width: 1099px; */
+}
+
+.section11::-webkit-scrollbar,
+.section31::-webkit-scrollbar {
+  display: none;
+}
+
+.section11link {
+  float: left;
+  display: flex;
+  font-size: 0.8em;
+  flex-grow: 1 1 0;
+  padding: 0 1em;
+}
+
+.section11link img {
+  width: 4em;
+  height: 4em;
+  object-fit: contain;
+}
+
+.section11LinkDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  text-align: center;
+  font-weight: 500;
+  gap: 0.5em;
+  padding: 0.3em 0;
+}
+
+
+/* ------------ section 2 ------------ */
+
+.section2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 1em;
+}
+
+.section21 {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1 1 10px;
+  /* max-width: 1120px; */
+}
+
+.section21::-webkit-scrollbar {
+  display: none;
+}
+
+.section21link {
+  float: left;
+  display: flex;
+  font-size: 0.8em;
+  flex-grow: 1 1 0;
+}
+
+.caroImagOverFlowX {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+}
+
+.caroImagOverFlowX .lastToFirst {
+  scroll-behavior: smooth;
+}
+
+.caroImagOverFlowX::-webkit-scrollbar {
+  display: none;
+}
+
+.mapCaroDiv {
+  min-width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 0.02em;
+}
+
+.mapCaroDiv>div {
+  flex: 0 0 auto;
+  width: 100%;
+  scroll-snap-align: start;
+}
+
+.section21LinkDiv img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section21LinkDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+  font-weight: 500;
+  gap: 0.5em;
+  position: relative;
+}
+
+.spCaroBody {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1em 0;
+  gap: 0.5em;
+}
+
+.fade-in {
+  animation: fadeIn 100ms;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.spCaro {
+  display: inline-block;
+  width: 10px;
+  height: 4px;
+  background-color: #b0b0b0;
+  border-radius: 6px;
+}
+
+.spCaro.active {
+  width: 50px;
+}
+
+.spCaroGrow {
+  width: 0%;
+  height: 100%;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.spCaroGrow.spCaroGrowActive {
+  transition: all 3000ms ease;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.caroBtn {
+  position: absolute;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caroBtn button {
+  height: 70px;
+  width: 30px;
+  background-color: white;
+  text-align: center;
+}
+
+.caroBtn.previous button {
+  border-radius: 0 5px 5px 0;
+  margin-left: -1px;
+}
+
+.caroBtn.next button {
+  border-radius: 5px 0 0 5px;
+  margin-right: -1px;
+}
+
+.caroBtn.previous {
+  align-self: self-start;
+}
+
+.caroBtn.next {
+  align-self: flex-end;
+}
+
+
+/* ////////////////-section 3-///////////// */
+.section3 {
+  position: relative;
+  background-color: transparent;
+  overflow: hidden;
+  /* changed from scroll */
+}
+
+.section31 {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  gap: 1em;
+}
+
+
+.smartPhoneRightdiv {
+  right: 0;
+  padding: 1em;
+  width: 150px;
+  flex-shrink: 0;
+}
+
+.section31 .smartPhoneList {
+  /**/
+  display: flex;
+  overflow-x: auto;
+  flex: 1;
+  gap: 1em;
+}
+
+.smartPhoneList::-webkit-scrollbar {
+  display: none;
+}
+
+.section31link {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8em;
+  padding: 0 2em;
+}
+
+.section31link {
+  background-color: white;
+  width: 70%;
+}
+
+.section31Sidelink {}
+
+.section31LinkDiv div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.smartPhoneRightdiv img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* --------  section 4 ----------- */
+
+.section4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 0.8em;
+  position: relative;
+}
+
+.section41 {
+  background-color: white;
+  padding: 0.1em 1em;
+  flex: 1 1 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  overflow: scroll;
+}
+
+.section411 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  position: relative;
+}
+
+.section41::-webkit-scrollbar {
+  display: none;
+}
+
+.section41 h2 {
+  position: sticky;
+  left: 0;
+  padding: 0.5em;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.section42 {
+  padding-top: 1em;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.section4HomeList {
+  float: left;
+  display: flex;
+  font-size: 0.8em;
+  flex-grow: 1 1 0;
+  padding: 0 1em;
+}
+
+.section4HomeListCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.section4HomeListCard span {
+  display: inline-block;
+  padding: 0.2em 0;
+  font-weight: 500;
+}
+
+.section4HomeListCard img {
+  width: 130px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.scrollXBtn {
+  position: absolute;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.scrollXBtn button {
+  height: 70px;
+  width: 30px;
+  background-color: #F1F2F4;
+  text-align: center;
+  box-shadow: 1px 1px 5px rgb(204, 204, 204), -1px -1px 5px rgb(204, 204, 204);
+}
+
+.scrollXBtn.next {
+  right: 0.78em;
+  z-index: 1;
+}
+
+.scrollXBtn.previous {
+  left: 0.78em;
+  z-index: 1;
+}
+
+.scrollXBtn.previous button {
+  border-radius: 0 5px 5px 0;
+}
+
+.scrollXBtn.next button {
+  border-radius: 5px 0 0 5px;
+}
+
+/* --------  section 4 Offers ----------- */
+
+.section5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 0.8em;
+}
+
+.section5List {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1em 0;
+}
+
+.section5ListCard {
+  background-color: #fff;
+  display: flex;
+  width: 100%;
+}
+
+.section5ListCard img {
+  width: 98%;
+  margin: auto;
+  object-fit: cover;
+  aspect-ratio: 41 / 22;
+}
+
+/* --------  section 4 featured brandes ----------- */
+
+
+
+.featuredBrands {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 0.8em;
+  position: relative;
+}
+
+.featuredBrandContain {
+  background-color: white;
+  padding: 0.1em 1em;
+  flex: 1 1 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  overflow: scroll;
+}
+
+.featuredBrandContain h2{
+  position: sticky;
+}
+
+.featuredBrandsBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  position: relative;
+}
+
+.section41::-webkit-scrollbar {
+  display: none;
+}
+
+.section41 h2 {
+  position: sticky;
+  left: 0;
+  padding: 0.5em;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.featuredBrandsInnerBox {
+  padding-top: 1em;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.featuredBrandCard {
+  float: left;
+  display: flex;
+  font-size: 0.8em;
+  flex-grow: 1 1 0;
+  padding: 0 1em;
+}
+
+.featuredBrandImgCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.section4HomeListCard span {
+  display: inline-block;
+  padding: 0.2em 0;
+  font-weight: 500;
+}
+
+.section4HomeListCard img {
+  width: 130px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.scrollXBtn {
+  position: absolute;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.scrollXBtn button {
+  height: 70px;
+  width: 30px;
+  background-color: #F1F2F4;
+  text-align: center;
+  box-shadow: 1px 1px 5px rgb(204, 204, 204), -1px -1px 5px rgb(204, 204, 204);
+}
+
+.scrollXBtn.next {
+  right: 0.78em;
+  z-index: 1;
+}
+
+.scrollXBtn.previous {
+  left: 0.78em;
+  z-index: 1;
+}
+
+.scrollXBtn.previous button {
+  border-radius: 0 5px 5px 0;
+}
+
+.scrollXBtn.next button {
+  border-radius: 5px 0 0 5px;
+}
