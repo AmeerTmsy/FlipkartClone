@@ -16,12 +16,19 @@ function Section3(props) {
                                     <div>
                                         <img src={smartPhones.url} alt={smartPhones.title} />
                                     </div>
-                                    <span>
-                                        <span>{smartPhones.title}</span>
-                                    </span>
-                                    <span>
-                                        <span>{smartPhones.priceRange}</span>
-                                    </span>
+                                    <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start', gap: 3}}>
+                                        <span>
+                                            <span>{smartPhones.title}</span>
+                                        </span>
+                                        <span>
+                                            <span>{smartPhones.priceRange}</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className='section11LinkDivMore'>
+                                    <div>
+                                        <i className="ri-arrow-right-s-line"></i>
+                                    </div>
                                 </div>
                             </Link>
                         ))

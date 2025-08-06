@@ -154,8 +154,7 @@ a {
 
 
 header,
-.headLeft,
-.headRight {
+.headLeft {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -169,9 +168,10 @@ header {
 }
 
 .headerlogo {
-  width: 130px;
-  height: 40px;
+  width: 100px;
+  height: 50px;
   object-fit: contain;
+  float: left;
 }
 
 .headLeft {
@@ -179,7 +179,21 @@ header {
   padding: 0 1em;
 }
 
+
+.headLeft1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.headLeft2 {
+  flex-grow: 3;
+}
+
 .headRight {
+  display: flex;
   flex: 1 1 40%;
   padding: 0 1em;
   gap: 2em;
@@ -187,13 +201,82 @@ header {
   font-weight: 500;
 }
 
-.headLeft1 {
-  flex-grow: 1;
+.downLoadIcon {
+  font-size: 1.5em;
+  display: none;
 }
 
-.headLeft2 {
-  flex-grow: 3;
+@media (max-width: 700px) {
+  .headRight .ri-store-line {
+    display: none;
+  }
+
+
 }
+
+@media (max-width: 767px) {
+  .headRight .ri-more-2-line {
+    display: none;
+  }
+
+  .headLeft1 {
+    flex-grow: 0;
+  }
+
+  .headRight {
+    padding: 0;
+  }
+
+  .headLinkCartHide {
+    display: none;
+  }
+
+  .headLinkCartHide {
+    display: none;
+  }
+
+  .headLinkMenuDotHide {
+    display: none;
+  }
+
+  .downLoadIcon {
+    display: inline-block;
+  }
+
+  .headLeft2 {
+    display: none;
+  }
+}
+
+@media (min-width: 767px) {
+  .ri-menu-line {
+    display: none;
+  }
+
+  .headRight {
+    justify-content: flex-end;
+  }
+
+  .headLeft {
+    padding-right: 0;
+  }
+
+  .headLeft1 {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 900px) {
+  .headRight .hide900px {
+    display: none;
+  }
+
+  .headRight {
+    flex: 0;
+  }
+}
+
+
 
 .headLeft2 .search {
   background-color: #f0f5ff;
@@ -210,7 +293,7 @@ header {
   font-size: 1.4em;
 }
 
-.headIcon:last-child {
+.headIcon:nth-child(5) {
   padding-right: 1em;
 }
 
@@ -276,7 +359,6 @@ header {
   padding: 0.3em 0;
 }
 
-
 /* ------------ section 2 ------------ */
 
 .section2 {
@@ -325,6 +407,7 @@ header {
 }
 
 .mapCaroDiv {
+  min-height: 120px;
   min-width: 100%;
   display: flex;
   flex-direction: row;
@@ -351,6 +434,7 @@ header {
   text-align: left;
   font-weight: 500;
   gap: 0.5em;
+  /* height: 100px; */
   position: relative;
 }
 
@@ -435,6 +519,15 @@ header {
   align-self: flex-end;
 }
 
+@media(max-width: 700px) {
+  .caroBtn{
+    display: none;
+  }
+  .spCaroBody{
+    padding: 0.5em 0;
+    padding-top: 0;
+  }
+}
 
 /* ////////////////-section 3-///////////// */
 .section3 {
@@ -501,6 +594,54 @@ header {
   height: auto;
   object-fit: cover;
   border-radius: 6px;
+}
+
+.section11LinkDivMore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media(max-width: 767px) {
+  .smartPhoneRightdiv {
+    display: none;
+  }
+
+  .smartPhoneList {
+    flex-direction: column;
+  }
+
+  .section31link {
+    width: 100%;
+    border-bottom: 0.1em solid #d5d5d5;
+  }
+
+  .section31link:last-child {
+    width: 100%;
+    border-bottom: 0;
+  }
+
+  .section11LinkDiv {
+    flex-direction: row;
+  }
+
+  .smartPhoneList {
+    overflow-x: hidden;
+  }
+
+  .section31link {
+    justify-content: space-evenly;
+    font-size: 0.8em;
+    padding: 0;
+    gap: 10em;
+  }
+
+}
+
+@media(min-width: 767px) {
+  .section11LinkDivMore {
+    display: none;
+  }
 }
 
 /* --------  section 4 ----------- */
@@ -643,6 +784,18 @@ header {
   aspect-ratio: 41 / 22;
 }
 
+@media(max-width:769px) {
+  .section5List {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width:459px) {
+  .section5List {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* --------  section 4 featured brandes ----------- */
 
 
@@ -666,7 +819,7 @@ header {
   overflow: scroll;
 }
 
-.featuredBrandContain h2{
+.featuredBrandContain h2 {
   position: sticky;
 }
 
@@ -758,4 +911,14 @@ header {
 
 .scrollXBtn.next button {
   border-radius: 5px 0 0 5px;
+}
+
+@media(max-width: 760px) {
+  .featuredBrandsInnerBox {
+    gap: 0em;
+  }
+
+  .featuredBrandCard {
+    padding: 0 0.1em;
+  }
 }

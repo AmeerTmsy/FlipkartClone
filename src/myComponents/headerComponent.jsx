@@ -10,6 +10,9 @@ function HeaderComponent(props) {
         <header>
             <div className="headLeft">
                 <div className='headLeft1'>
+                    <div>
+                        <i class="ri-menu-line"></i>
+                    </div>
                     <a href="">
                         <img className='headerlogo' src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" alt="" />
                     </a>
@@ -29,6 +32,9 @@ function HeaderComponent(props) {
                 </div>
             </div>
             <div className="headRight">
+                <div className='downLoadIcon'>
+                    <i class="ri-mobile-download-line"></i>
+                </div>
                 <div className='loginDropdown'>
                     <Link to={''}>
                         <i className="ri-account-circle-line headIcon"></i>
@@ -36,15 +42,15 @@ function HeaderComponent(props) {
                         <i className="ri-arrow-down-s-line headIcon"></i>
                     </Link>
                 </div>
-                <div>
-                    <Link to={''}><i className="ri-shopping-cart-2-line headIcon"></i>Cart</Link>
-                    <Link to={''}>Cart</Link>
+                <div className='headLinkCartHide'>
+                    <Link to={''}><i className="ri-shopping-cart-2-line headIcon"></i></Link>
+                    <Link  className='hide900px' to={''}>Cart</Link>
                 </div>
-                <div>
+                <div className='headLinkCartHide'>
                     <Link to={''}><i className="ri-store-line headIcon"></i></Link>
-                    <Link to={''}>Becone&nbsp;a&nbsp;Seller</Link>
+                    <Link className='hide900px' to={''}>Becone&nbsp;a&nbsp;Seller</Link>
                 </div>
-                <div><i className="ri-more-2-line headIcon"></i></div>
+                <div className='headLinkMenuDotHide'><i className="ri-more-2-line headIcon"></i></div>
             </div>
         </header>
     );
