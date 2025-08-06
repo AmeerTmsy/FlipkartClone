@@ -6,42 +6,44 @@ function Section3(props) {
 
     return (
         <div className='section3'>
-            {/* <h2>Best Deals on Smartphones</h2> */}
             <div className='section31'>
-                <div className='smartPhoneList'>
-                    {
-                        smartPhones.map((smartPhones, idx) => (
-                            <Link className='section31link' to='/' key={idx}>
-                                <div className='section11LinkDiv'>
-                                    <div>
-                                        <img src={smartPhones.url} alt={smartPhones.title} />
+                <h2>Best Deals on Smartphones</h2>
+                <div style={{width: '100%', padding: '0 1em', boxSizing: 'border-box'}}>
+                    <div className='smartPhoneList'>
+                        {
+                            smartPhones.map((smartPhones, idx) => (
+                                <Link className='section31link' to='/' key={idx}>
+                                    <div className='section11LinkDiv'>
+                                        <div>
+                                            <img src={smartPhones.url} alt={smartPhones.title} />
+                                        </div>
+                                        <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start', gap: 3 }}>
+                                            <span>
+                                                <span>{smartPhones.title}</span>
+                                            </span>
+                                            <span>
+                                                <span>{smartPhones.priceRange}</span>
+                                            </span>
+                                        </div>
                                     </div>
-                                    <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start', gap: 3}}>
-                                        <span>
-                                            <span>{smartPhones.title}</span>
-                                        </span>
-                                        <span>
-                                            <span>{smartPhones.priceRange}</span>
-                                        </span>
+                                    <div className='section11LinkDivMore'>
+                                        <div>
+                                            <i className="ri-arrow-right-s-line"></i>
+                                        </div>
                                     </div>
+                                </Link>
+                            ))
+                        }
+                    </div>
+                    <div className='smartPhoneRightdiv'>
+                        <Link className='section31SPRlink' to='/' >
+                            <div className='section31LinkDiv'>
+                                <div>
+                                    <img src='https://rukminim1.flixcart.com/fk-p-flap/530/810/image/da6a671bf5063ffd.jpeg?q=90' alt={'smartPhones.title'} />
                                 </div>
-                                <div className='section11LinkDivMore'>
-                                    <div>
-                                        <i className="ri-arrow-right-s-line"></i>
-                                    </div>
-                                </div>
-                            </Link>
-                        ))
-                    }
-                </div>
-                <div className='smartPhoneRightdiv'>
-                    <Link className='section31SPRlink' to='/' >
-                        <div className='section31LinkDiv'>
-                            <div>
-                                <img src='https://rukminim1.flixcart.com/fk-p-flap/530/810/image/da6a671bf5063ffd.jpeg?q=90' alt={'smartPhones.title'} />
                             </div>
-                        </div>
-                    </Link>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>

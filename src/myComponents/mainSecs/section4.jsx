@@ -52,9 +52,14 @@ function Section4(props) {
                                         <div>
                                             <img src={homeApp.url} alt="" />
                                         </div>
-                                        <div>
+                                        <div style={{display: 'flex', flexDirection: 'column', paddingLeft: '1em', justifyContent: 'center'}}>
                                             <span>{homeApp.title}</span>
                                             <span>{homeApp.priceRange}</span>
+                                        </div>
+                                    </div>
+                                    <div className='section11LinkDivMore'>
+                                        <div>
+                                            <i className="ri-arrow-right-s-line"></i>
                                         </div>
                                     </div>
                                 </Link>

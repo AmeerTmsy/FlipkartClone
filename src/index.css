@@ -306,13 +306,13 @@ header {
 
 /* ------------ section 1 ------------ */
 
-.section1,
-.section3 {
+.section1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 0.5em 0.8em;
+  position: relative;
 }
 
 .section11,
@@ -531,29 +531,35 @@ header {
 
 /* ////////////////-section 3-///////////// */
 .section3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em 0.8em;
   position: relative;
   background-color: transparent;
   overflow: hidden;
-  /* changed from scroll */
+}
+.section3 h2{
+  left: 2em;
+  top: 1.2em;
+  z-index: 1;
+  font-size: 1.5em;
+  font-weight: 500;
 }
 
 .section31 {
   width: 100%;
   background-color: white;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start;
   position: relative;
   gap: 1em;
 }
 
 
-.smartPhoneRightdiv {
-  right: 0;
-  padding: 1em;
-  width: 150px;
-  flex-shrink: 0;
-}
 
 .section31 .smartPhoneList {
   /**/
@@ -580,19 +586,34 @@ header {
 }
 
 .section31Sidelink {}
+.section31SPRlink{
+  height: 100%;
+}
 
 .section31LinkDiv div {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: #fff;
+  padding: 2em 1em;
 }
 
+.smartPhoneRightdiv {
+  background-color: #F1F2F4;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-left: 1em;
+  width: 150px;
+  flex-shrink: 0;
+  height: 100%;
+}
 .smartPhoneRightdiv img {
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  height: 100%;
+  object-fit: fill;
   border-radius: 6px;
 }
 
@@ -630,7 +651,6 @@ header {
   }
 
   .section31link {
-    justify-content: space-evenly;
     font-size: 0.8em;
     padding: 0;
     gap: 10em;
@@ -676,7 +696,6 @@ header {
 .section41::-webkit-scrollbar {
   display: none;
 }
-
 .section41 h2 {
   position: sticky;
   left: 0;
@@ -755,7 +774,28 @@ header {
   border-radius: 5px 0 0 5px;
 }
 
-/* --------  section 4 Offers ----------- */
+@media(max-width: 767px) {
+  .section42{
+    flex-direction: column;
+  }
+  .section4HomeList{
+    padding-bottom: 1em;
+    justify-content: space-between;
+    border-bottom: 0.1em solid #c6c6c6;
+  }
+  .section4HomeList:last-child{
+    border-bottom: 0;
+  }
+  .section4HomeListCard{
+    flex-direction: row;  
+  }
+  .section4 .scrollXBtn{
+    display: none;
+  }
+}
+@media(min-width: 767px) {
+}
+/* --------  section 5 Offers ----------- */
 
 .section5 {
   display: flex;
@@ -796,7 +836,7 @@ header {
   }
 }
 
-/* --------  section 4 featured brandes ----------- */
+/* --------  section 6 featured brandes ----------- */
 
 
 
@@ -829,18 +869,6 @@ header {
   flex-direction: column;
   gap: 0.5em;
   position: relative;
-}
-
-.section41::-webkit-scrollbar {
-  display: none;
-}
-
-.section41 h2 {
-  position: sticky;
-  left: 0;
-  padding: 0.5em;
-  font-size: 1.5rem;
-  font-weight: 500;
 }
 
 .featuredBrandsInnerBox {
