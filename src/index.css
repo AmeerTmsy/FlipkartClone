@@ -348,6 +348,16 @@ header {
   object-fit: contain;
 }
 
+.section11LinkDivsectionof1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  text-align: center;
+  font-weight: 500;
+  gap: 0.5em;
+  padding: 0.3em 0;
+}
 .section11LinkDiv {
   display: flex;
   flex-direction: column;
@@ -357,6 +367,11 @@ header {
   font-weight: 500;
   gap: 0.5em;
   padding: 0.3em 0;
+}
+@media(max-width: 760){
+  .section11LinkDivsectionof1{
+    flex-direction: column;
+  }
 }
 
 /* ------------ section 2 ------------ */
@@ -520,10 +535,11 @@ header {
 }
 
 @media(max-width: 700px) {
-  .caroBtn{
+  .caroBtn {
     display: none;
   }
-  .spCaroBody{
+
+  .spCaroBody {
     padding: 0.5em 0;
     padding-top: 0;
   }
@@ -540,7 +556,8 @@ header {
   background-color: transparent;
   overflow: hidden;
 }
-.section3 h2{
+
+.section3 h2 {
   left: 2em;
   top: 1.2em;
   z-index: 1;
@@ -578,15 +595,11 @@ header {
   justify-content: space-between;
   font-size: 0.8em;
   padding: 0 2em;
-}
-
-.section31link {
   background-color: white;
   width: 70%;
 }
 
-.section31Sidelink {}
-.section31SPRlink{
+.section31SPRlink {
   height: 100%;
   display: flex;
   justify-content: center;
@@ -594,6 +607,9 @@ header {
   background-color: #fff;
 }
 
+.section11LinkDiv img {
+  height: 100px;
+}
 
 .smartPhoneRightdiv {
   background-color: #F1F2F4;
@@ -607,14 +623,15 @@ header {
   box-sizing: border-box;
 
 }
+
 .section31LinkDiv div {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0.1em 0em;
 }
+
 .smartPhoneRightdiv img {
   width: 100%;
   height: 100%;
@@ -661,12 +678,20 @@ header {
     gap: 10em;
   }
 
+  .section11LinkDiv {
+    padding: 1em;
+  }
+
 }
 
 @media(min-width: 767px) {
   .section11LinkDivMore {
     display: none;
   }
+
+  /* .section11LinkDiv img {
+    height: 100px;
+  } */
 }
 
 /* --------  section 4 ----------- */
@@ -701,6 +726,7 @@ header {
 .section41::-webkit-scrollbar {
   display: none;
 }
+
 .section41 h2 {
   position: sticky;
   left: 0;
@@ -714,6 +740,13 @@ header {
   display: flex;
   flex-direction: row;
   gap: 1em;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.section42::-webkit-scrollbar {
+  display: none;
 }
 
 .section4HomeList {
@@ -780,26 +813,31 @@ header {
 }
 
 @media(max-width: 767px) {
-  .section42{
+  .section42 {
     flex-direction: column;
   }
-  .section4HomeList{
+
+  .section4HomeList {
     padding-bottom: 1em;
     justify-content: space-between;
     border-bottom: 0.1em solid #c6c6c6;
   }
-  .section4HomeList:last-child{
+
+  .section4HomeList:last-child {
     border-bottom: 0;
   }
-  .section4HomeListCard{
-    flex-direction: row;  
+
+  .section4HomeListCard {
+    flex-direction: row;
   }
-  .section4 .scrollXBtn{
+
+  .section4 .scrollXBtn {
     display: none;
   }
 }
-@media(min-width: 767px) {
-}
+
+@media(min-width: 767px) {}
+
 /* --------  section 5 Offers ----------- */
 
 .section5 {
@@ -866,6 +904,9 @@ header {
 
 .featuredBrandContain h2 {
   position: sticky;
+  padding-top: 1em;
+  font-size: 1.5em;
+  font-weight: 500;
 }
 
 .featuredBrandsBox {
@@ -881,6 +922,13 @@ header {
   display: flex;
   flex-direction: row;
   gap: 1em;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.featuredBrandsInnerBox::-webkit-scrollbar {
+  display: none;
 }
 
 .featuredBrandCard {
@@ -888,7 +936,7 @@ header {
   display: flex;
   font-size: 0.8em;
   flex-grow: 1 1 0;
-  padding: 0 1em;
+  /* padding: 0 1em; */
 }
 
 .featuredBrandImgCard {
@@ -954,4 +1002,13 @@ header {
   .featuredBrandCard {
     padding: 0 0.1em;
   }
+  .featuredBrandImgCard {
+    width: 330px;
+  }
+}
+
+@media(min-width: 760px) {
+  /* .featuredBrandImgCard {
+    width: 100%;
+  } */
 }

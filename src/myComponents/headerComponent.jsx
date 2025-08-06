@@ -11,7 +11,7 @@ function HeaderComponent(props) {
             <div className="headLeft">
                 <div className='headLeft1'>
                     <div>
-                        <i class="ri-menu-line"></i>
+                        <i className="ri-menu-line"></i>
                     </div>
                     <a href="">
                         <img className='headerlogo' src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/fkheaderlogo_exploreplus-44005d.svg" alt="" />
@@ -33,7 +33,7 @@ function HeaderComponent(props) {
             </div>
             <div className="headRight">
                 <div className='downLoadIcon'>
-                    <i class="ri-mobile-download-line"></i>
+                    <i className="ri-mobile-download-line"></i>
                 </div>
                 <div className='loginDropdown'>
                     <Link to={''}>

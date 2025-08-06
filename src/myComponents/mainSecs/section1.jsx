@@ -6,7 +6,7 @@ function Section1(props) {
         <div className='section1'>
             <div className='section11'>
                 <Link className='section11link' to='/'>
-                    <div className='section11LinkDiv'>
+                    <div className='section11LinkDivsectionof1'>
                         <div>
                             <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/a22a213ca6221b65.png?q=100" alt="" />
                         </div>
@@ -16,7 +16,7 @@ function Section1(props) {
                     </div>
                 </Link>
                 <Link className='section11link' to='/'>
-                    <div className='section11LinkDiv'>
+                    <div className='section11LinkDivsectionof1'>
                         <div>
                             <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/5f2ee7f883cdb774.png?q=100" alt="" />
                         </div>
@@ -26,7 +26,7 @@ function Section1(props) {
                     </div>
                 </Link>
                 <Link className='section11link' to='/'>
-                    <div className='section11LinkDiv'>
+                    <div className='section11LinkDivsectionof1'>
                         <div>
                             <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/ff559cb9d803d424.png?q=100" alt="" />
                         </div>
@@ -36,7 +36,7 @@ function Section1(props) {
                     </div>
                 </Link>
                 <Link className='section11link' to='/'>
-                    <div className='section11LinkDiv'>
+                    <div className='section11LinkDivsectionof1'>
                         <div>
                             <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/af646c36d74c4be9.png?q=100" alt="" />
                         </div>
@@ -46,7 +46,7 @@ function Section1(props) {
                     </div>
                 </Link>
                 <Link className='section11link' to='/'>
-                    <div className='section11LinkDiv'>
+                    <div className='section11LinkDivsectionof1'>
                         <div>
                             <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/1788f177649e6991.png?q=100" alt="" />
                         </div>
@@ -56,7 +56,7 @@ function Section1(props) {
                     </div>
                 </Link>
                 <Link className='section11link' to='/'>
-                    <div className='section11LinkDiv'>
+                    <div className='section11LinkDivsectionof1'>
                         <div>
                             <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/e90944802d996756.jpg?q=100" alt="" />
                         </div>
@@ -66,7 +66,7 @@ function Section1(props) {
                     </div>
                 </Link>
                 <Link className='section11link' to='/'>
-                    <div className='section11LinkDiv'>
+                    <div className='section11LinkDivsectionof1'>
                         <div>
                             <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/3c647c2e0d937dc5.png?q=100" alt="" />
                         </div>
@@ -76,7 +76,7 @@ function Section1(props) {
                     </div>
                 </Link>
                 <Link className='section11link' to='/'>
-                    <div className='section11LinkDiv'>
+                    <div className='section11LinkDivsectionof1'>
                         <div>
                             <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/b3020c99672953b9.png?q=100" alt="" />
                         </div>
@@ -86,7 +86,7 @@ function Section1(props) {
                     </div>
                 </Link>
                 <Link className='section11link' to='/'>
-                    <div className='section11LinkDiv'>
+                    <div className='section11LinkDivsectionof1'>
                         <div>
                             <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/e730a834ad950bae.png?q=100" alt="" />
                         </div>
