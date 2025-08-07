@@ -1,17 +1,31 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import smartPhones from '../../datas/smartPhones';
 
 function Section3(props) {
 
+    const [visibleSmartPhones, setVisibleSmartPhones] = useState(smartPhones);
+
+    useEffect(() => {
+        const updateVisiblePhones = () => {
+            if (window.innerWidth < 769) setVisibleSmartPhones(smartPhones.slice(0, 4));
+            else setVisibleSmartPhones(smartPhones);
+        };
+
+        updateVisiblePhones(); // Initial check
+        window.addEventListener('resize', updateVisiblePhones);
+        // Cleanup on unmount
+        return () => window.removeEventListener('resize', updateVisiblePhones);
+    }, []);
+
     return (
         <div className='section3'>
             <div className='section31'>
                 <h2>Best Deals on Smartphones</h2>
-                <div style={{width: '100%', padding: '0 1em', boxSizing: 'border-box'}}>
+                <div style={{ width: '100%', padding: '0 1em', boxSizing: 'border-box' }}>
                     <div className='smartPhoneList'>
                         {
-                            smartPhones.map((smartPhones, idx) => (
+                            visibleSmartPhones.map((smartPhones, idx) => (
                                 <Link className='section31link' to='/' key={idx}>
                                     <div className='section11LinkDiv'>
                                         <div>
